@@ -23,7 +23,7 @@ storage/logs
 
 
 
-.env*
+# .env*
 
 
 # Laravel 5 & Lumen specific with changed public path
