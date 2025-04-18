@@ -1,0 +1,211 @@
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+   display: none;
+}
+
+
+.star{
+   font-size: larger !important;
+   color: red !important;
+}
+
+/*progressbar*/
+#progressbar {
+   margin-bottom: 30px;
+   overflow: hidden;
+   padding: 0;
+}
+
+#progressbar li {
+   list-style-image: url(../img/radio_button.svg);
+   list-style-position: inside;
+   color: rgb(0, 0, 0);
+   text-transform: uppercase;
+   font-size: 10px;
+   position: relative;
+   z-index: 1;
+   padding-bottom: 1rem;
+}
+
+#progressbar li.active {
+   list-style-image: url(../img/radio_button_checked.svg);
+}
+
+#progressbar li:not(:last-child)::before {
+   position: absolute;
+   content: "";
+   z-index: -1;
+   left: 6px;
+   top: 2px;
+   height: 100%;
+   width: 1px;
+   background-color: #d3d3d3;
+}
+
+/*  */
+
+
+
+fieldset span.inches {
+   font-weight: 500 !important;
+   font-size: 11.67px !important;
+   line-height: 16.67px !important;
+   color: rgba(0, 215, 9, 1) !important;
+
+}
+
+fieldset .form-check label {
+   color: rgba(102, 99, 99, 1) !important;
+   font-weight: 400;
+   font-size: 14.04px;
+   line-height: 18, 67px;
+
+}
+
+fieldset button {
+   background: rgba(89, 169, 255, 1) !important;
+   border: none !important;
+   outline: none !important;
+}
+
+/* Face Recognization */
+.face-rec-h1 {
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 16.67px;
+   color: rgba(52, 64, 84, 1);
+
+}
+
+.face-rec-h2 {
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 14px;
+   color: rgba(102, 99, 99, 1);
+
+}
+
+.face-rec-h3 {
+   font-weight: 400 !important;
+   font-size: 11px !important;
+   line-height: 14.63px !important;
+   color: rgba(102, 99, 99, 1) !important;
+}
+
+.camera-image {
+   display: inline-block;
+   cursor: pointer;
+}
+
+/* Full screen video style */
+#video-container {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 9999;
+   background-color: black;
+   display: none;
+}
+
+#video-container video {
+   width: 100%;
+   height: 100%;
+}
+
+.bg-blue-form10 {
+   background:
+      rgba(89, 169, 255, 0.05);
+   border:
+      1px All sides rgba(248, 249, 250, 1);
+}
+
+.bg-blue-form10 h5 {
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 23.94px;
+   color: rgba(89, 169, 255, 1);
+
+}
+
+
+
+/* fixed next previous buttons*/
+
+fieldset button.previous {
+   position: absolute;
+   bottom: 1rem;
+   left: 0;
+   transform: translate(16px, 0%);
+}
+
+fieldset button.next {
+   position: absolute;
+   bottom: 1rem;
+   right: 0;
+   transform: translate(-16px, 0%);
+}
+
+
+.mb-10 {
+   margin-bottom: 5rem;
+}
+
+/* Camera */
+.camera-image {
+   display: inline-block;
+   cursor: pointer;
+}
+
+/* Full screen video style */
+#overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   z-index: 9998;
+   display: none;
+}
+
+#video-container {
+   width: 500px;
+   height: 400px;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 9999;
+   background-color: white;
+   display: none;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+#video-container video {
+   width: 100%;
+   height: auto;
+   border-radius: 10px;
+}
+
+.close-button {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   cursor: pointer;
+   top: -15px;
+   right: -11px;
+   width: 30px;
+   height: 30px;
+   background: black;
+   color: white !important;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%
+}

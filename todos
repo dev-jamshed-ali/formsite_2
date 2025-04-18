@@ -1,0 +1,7 @@
+Instructions have been added to the login page for better clarity and guidance.
+Validations have been implemented for Form Part 1 to ensure proper data entry.
+Validations have been implemented for Form Part 2 to ensure proper data entry.
+Integrated the Smarty address autocomplete API to improve address input functionality.
+Resolved issues related to deprecated CORS packages and fixed the related configuration.
+
+

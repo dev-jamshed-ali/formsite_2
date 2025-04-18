@@ -1,0 +1,778 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+   font-family: "Inter", sans-serif;
+}
+
+
+input::placeholder {
+   color: rgba(189, 189, 189, 1) !important;
+}
+
+.main-container button {
+   background: rgba(66, 153, 225, 1) !important;
+   color: white;
+   border: none !important;
+   outline: none;
+}
+
+a {
+   color: rgba(89, 169, 255, 1);
+}
+.dashboard .left .dashboard-menu ul li a .icon-div i{
+
+   color: rgba(89, 169, 255, 1) !important; 
+
+}
+.main-container {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+
+/* ==== Custom classes ==== */
+
+.min-100 {
+   min-height: 100vh;
+}
+
+.bg-grey {
+   background: rgba(250, 250, 250, 1);
+}
+
+.form-login {
+   max-width: 440px;
+}
+
+.form-signup {
+   max-width: 641px;
+}
+
+.form-otp {
+   max-width: 624px;
+}
+
+.form-otp-methods {
+   height: 431.56px;
+}
+
+/*==== Custom classes End ==== */
+
+/* ====Custom classes for fonts ==== */
+.font-big-700 {
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 48.41px;
+   color: rgba(12, 21, 73, 1);
+}
+
+.font-big2-700 {
+   font-size: 28px;
+   font-weight: 700;
+   line-height: 40px;
+   color: rgba(12, 21, 73, 1);
+}
+
+.font-sm-400 {
+   font-size: 17px;
+   font-weight: 400;
+   line-height: 20.57px;
+   color: rgba(48, 48, 48, 0.43);
+}
+
+/* ==== Custom classes for Fonts ==== */
+
+.link-hover {
+   text-decoration: none;
+}
+
+.link-hover:hover {
+   text-decoration: underline;
+}
+
+
+
+/* Custom Toggle Navbbar Button */
+.hamburger {
+   cursor: pointer;
+}
+
+.hamburger input {
+   display: none;
+}
+
+.hamburger svg {
+   /* The size of the SVG defines the overall size */
+   height: 3em;
+   /* Define the transition for transforming the SVG */
+   transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+   fill: none;
+   stroke: #59AEFE;
+   stroke-linecap: round;
+   stroke-linejoin: round;
+   stroke-width: 3;
+   /* Define the transition for transforming the Stroke */
+   transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+   stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked+svg {
+   transform: rotate(-45deg);
+}
+
+.hamburger input:checked+svg .line-top-bottom {
+   stroke-dasharray: 20 300;
+   stroke-dashoffset: -32.42;
+}
+
+/* Custom Toggle Navbbar Button */
+/* ==== Login Form ==== */
+.main-form-div {
+   width: 100%;
+   border: 0.75px solid rgba(248, 249, 250, 1);
+   box-shadow: 0px 3px 15px 0px rgba(231, 230, 230, 0.5);
+   border-radius: 6px;
+}
+
+input:focus {
+   box-shadow: none !important;
+   outline: none !important;
+}
+
+.eye {
+   width: 25px;
+   cursor: pointer;
+}
+
+
+/* Otp Form */
+#otpForm {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+#otpForm input[type="text"] {
+
+   width: 72.38px;
+   height: 71.18px;
+   background: rgba(89, 169, 255, 0.11);
+   border-radius: 5px;
+   border: none;
+   margin: 5px;
+   text-align: center;
+   font-size: 30px;
+}
+
+.otp-digit-text {
+   max-width: 475.62px;
+}
+
+/* Desktop 1 Screen  */
+.navbar {
+   min-height: 89px !important;
+   background: transparent !important;
+}
+
+.navbar .nav-link {
+   color: rgba(130, 130, 130, 1);
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 24px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+   font-weight: 700;
+   color: rgba(89, 169, 255, 1);
+}
+
+.navbar .navbar-brand img {
+   max-width: 125px;
+}
+
+.custom-btn {
+   border-radius: 5.11px;
+   background: rgba(89, 169, 255, 0.12);
+   color: rgba(89, 169, 255, 1) !important;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.guid-btn {
+   padding: 6px;
+   margin-right: 20px;
+   border-radius: 5.11px;
+   background: rgba(89, 169, 255, 0.12);
+   color: rgba(89, 169, 255, 1) !important;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.navbar-btn {
+   Width: 100.27px;
+   height: 34.22px;
+
+}
+
+.profile-info {
+   display: flex;
+   gap: 0px 10px;
+
+   align-items: center;
+   position: relative;
+}
+
+.profile-info::before {
+   content: '';
+   width: 0.75px;
+   height: 37.5px;
+   background: rgba(161, 161, 161, 1);
+   position: absolute;
+   left: -15px;
+}
+
+.profile {
+   width: 44.25px;
+   height: 44.25px;
+   border-radius: 50%;
+   overflow: hidden;
+}
+
+.profile img {
+   width: 100%;
+}
+
+.profile-info h5 {
+
+   font-weight: 500;
+   font-size: 14.25px;
+   line-height: 19.47px;
+
+}
+
+.profile-info p {
+   font-weight: 400;
+   font-size: 9px;
+   line-height: 12.29px;
+   color: rgba(167, 170, 176, 1);
+}
+
+/* ===== */
+.text-content{
+   width: 100%;
+}
+
+.reports .subbox {
+   min-height: 354px;
+   background: rgba(247, 249, 251, 1);
+   border: 1px solid rgba(230, 230, 230, 1);
+   border-radius: 16px;
+   padding: 25px 20px;
+}
+
+.reports .subbox h4 {
+   max-width: 567.63px;
+   font-weight: 600;
+   font-size: 17px;
+   line-height: 20px;
+   color: rgba(89, 169, 255, 1);
+
+}
+
+.reports .subbox h3 {
+   font-weight: 600;
+   font-size: 25px;
+   line-height: 29px;
+   color: rgba(73, 73, 73, 1);
+}
+
+.reports .subbox p {
+   max-width: 567.63px;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 18px;
+}
+.reports .subbox2 img{
+   width: 35.65px;
+}
+.reports .subbox2 h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+   color: rgba(73, 73, 73, 1) ;
+}
+.reports .subbox2 p{
+   max-width: 177.27px;
+ font-weight: 500;
+ font-size: 15px;
+ line-height: 20px;
+ color:  rgba(73, 73, 73, 1);
+ transform: translateY(-20px);
+}
+.reports .subbox2 a{
+ font-weight: 600;
+ font-size: 15px;
+ line-height: 24px;
+ text-decoration: none;
+
+}
+.reports .subbox2 #arrow{
+   width: 66px ;
+}
+.reports .subbox2 {
+   display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.reports-btn {
+   width: 63.1px;
+   height: 27.22px;
+   text-decoration: none;
+   font-weight: 600;
+   font-size: 13.54px;
+   line-height: 19.64px;
+}
+
+/* Table Area */
+/* .table-area table{
+   height: 533px !important;
+   overflow-y: scroll; 
+   border-radius: 16px !important;
+}*/
+.table > thead {
+   vertical-align: middle !important;
+   height: 77px;
+}
+.table > thead tr th {
+ font-weight: 600;
+ font-size: 23px;
+ line-height: 29px;
+ color: rgba(255, 255, 255, 1);
+}
+.table-area table tbody tr{
+   height: 55px !important;
+}
+.table-body table td{
+   background: rgba(247, 249, 251, 1);
+}
+ .table-area table th{
+   background: rgba(89, 169, 255, 1);
+}
+.table > :not(caption) > * > * {
+   padding: 1.5rem 2rem;
+}
+
+
+
+.table-body {
+   height: 533px !important;
+   overflow-y: scroll; 
+   border-radius: 0px 0px 16px 16px;
+
+
+ }
+
+
+ .table-head > thead tr th {
+   background: rgba(89, 169, 255, 1);
+   color: white !important;
+ }
+ .table-head > thead tr th:first-child{
+   border-radius: 16px 0px 0px 0px;
+ }
+ .table-head > thead tr th:last-child{
+   border-radius: 0px 16px 0px 0px;
+ }
+
+
+
+ /* Target first and last th */
+.table-container th:first-child {
+   width: 40%;
+}
+
+.table-container th:last-child {
+   width: 40%;
+}
+
+/* Target first and last td */
+.table-container td:first-child {
+   width: 40%;
+}
+
+.table-container td:last-child {
+   width: 40%;
+}
+
+/* Target middle th and td */
+.table-container th:nth-child(2),
+.table-container td:nth-child(2) {
+ width: 20%;
+}
+
+
+/* Define scrollbar styles */
+.table-body::-webkit-scrollbar {
+   width: 5.37px; /* Width of the scrollbar */
+}
+
+/* Track */
+.table-body::-webkit-scrollbar-track {
+   background: rgba(228, 228, 228, 1); /* Color of the track */
+   border-radius: 10px; /* Radius of the track */
+}
+
+/* Handle */
+.table-body::-webkit-scrollbar-thumb {
+   background: rgba(197, 197, 197, 1); /* Color of the thumb */
+   border-radius: 10px; /* Radius of the thumb */
+}
+
+/* Section 4 */
+.bg-rounded{
+   background: rgba(247, 249, 251, 1);
+   border-radius: 16px;
+}
+.section3 .innerbox{
+   min-height: 300px;
+}
+.section3 .innerbox .main-inner{
+   max-width: 365px;
+}
+
+.innerbox-font1{
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 32px;
+  color: rgba(73, 73, 73, 1);
+   
+}
+
+.innerbox-font2{
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+}
+
+.innerbox-font3{
+font-weight: 700;
+font-size: 16px;
+line-height: 27.7px;
+color: rgba(89, 169, 255, 1);
+}
+.innerbox-font4{
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 24px;
+   color:rgba(52, 52, 52, 1);
+   }
+.innerbox-btn{
+   width: 50px;
+   height: 21.57px;
+   font-weight: 600;
+   font-size: 8.77px;
+   line-height: 12.72px;
+   text-decoration: none;
+}
+/* Section4 */
+.section4 .innerbox2{
+  min-height:  450px !important;
+}
+.scroll-area-content{
+   height: 278px !important;
+   overflow-y: scroll;
+}
+.scroll-area-content h4,.innerbox2 h4{
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 24px;
+   color: rgba(29, 29, 29, 1);
+}
+
+.editable-cell {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.edit-icon {
+   position: absolute;
+   right: 20px;
+   top: 25px;
+   cursor: pointer;
+}
+th{
+   color: black !important;
+}
+
+
+/* Define scrollbar styles */
+.scroll-area-content::-webkit-scrollbar {
+   width: 5.37px; /* Width of the scrollbar */
+}
+
+/* Track */
+.scroll-area-content::-webkit-scrollbar-track {
+   background: rgba(228, 228, 228, 1); /* Color of the track */
+   border-radius: 10px; /* Radius of the track */
+}
+
+/* Handle */
+.scroll-area-content::-webkit-scrollbar-thumb {
+   background: rgba(197, 197, 197, 1); /* Color of the thumb */
+   border-radius: 10px; /* Radius of the thumb */
+}
+
+
+
+.section4 .innerbox2 h5{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(89, 169, 255, 1);
+  margin-top: 20px;
+}
+.card-container {
+   display: flex;
+   align-items: center;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 28px;
+color: rgba(52, 52, 52, 1);
+ }
+
+ .card-text {
+   margin-right: 10px;
+ }
+
+ .divider {
+   border-top: 2px dashed rgba(218, 218, 218, 1);
+   flex-grow: 1;
+   margin: 0 10px;
+ }
+ .text_danger{
+   color: red !important;
+ }
+ .ss_suggestion_list {
+   position: absolute;
+   width: 88%;
+   max-width: 400px; /* Adjust the max width as needed */
+   margin: 0 auto; /* Center the div */
+   border: 1px solid #ccc; /* Border to make it look like a select box */
+   border-radius: 4px; /* Rounded corners */
+   background-color: #fff; /* Background color */
+   overflow-y: auto; /* Enable vertical scroll */
+   max-height: 200px; /* Limit the height */
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Slight shadow for depth */
+   z-index: 1;
+}
+
+.ss_suggestion_list li {
+   list-style-type: none; /* Remove default list style */
+   padding: 10px 15px; /* Padding for each list item */
+   border-bottom: 1px solid #eee; /* Border between items */
+   cursor: pointer; /* Pointer cursor on hover */
+   background-color: #fff; /* Background color */
+   transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.ss_suggestion_list li:last-child {
+   border-bottom: none; /* Remove border from the last item */
+}
+
+.ss_suggestion_list li:hover {
+   background-color: #f0f0f0; /* Background color on hover */
+}
+
+@media (max-width: 600px) {
+   .ss_suggestion_list {
+       max-width: 100%; /* Make the div full-width on small screens */
+   }
+}
+
+/* Optional: Styling for scrollbar (Webkit-based browsers) */
+.ss_suggestion_list::-webkit-scrollbar {
+   width: 8px; /* Width of the scrollbar */
+}
+
+.ss_suggestion_list::-webkit-scrollbar-thumb {
+   background-color: #ccc; /* Color of the scrollbar thumb */
+   border-radius: 4px; /* Rounded corners */
+}
+
+.ss_suggestion_list::-webkit-scrollbar-track {
+   background-color: #f9f9f9; /* Color of the scrollbar track */
+}
+ .suggestion_address_left {
+   position: absolute;
+   width: 88%;
+   max-width: 400px; /* Adjust the max width as needed */
+   margin: 0 auto; /* Center the div */
+   border: 1px solid #ccc; /* Border to make it look like a select box */
+   border-radius: 4px; /* Rounded corners */
+   background-color: #fff; /* Background color */
+   overflow-y: auto; /* Enable vertical scroll */
+   max-height: 200px; /* Limit the height */
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Slight shadow for depth */
+   z-index: 1;
+}
+
+.suggestion_address_left li {
+   list-style-type: none; /* Remove default list style */
+   padding: 10px 15px; /* Padding for each list item */
+   border-bottom: 1px solid #eee; /* Border between items */
+   cursor: pointer; /* Pointer cursor on hover */
+   background-color: #fff; /* Background color */
+   transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.suggestion_address_left li:last-child {
+   border-bottom: none; /* Remove border from the last item */
+}
+
+.suggestion_address_left li:hover {
+   background-color: #f0f0f0; /* Background color on hover */
+}
+
+@media (max-width: 600px) {
+   .suggestion_address_left {
+       max-width: 100%; /* Make the div full-width on small screens */
+   }
+}
+
+/* Optional: Styling for scrollbar (Webkit-based browsers) */
+.suggestion_address_left::-webkit-scrollbar {
+   width: 8px; /* Width of the scrollbar */
+}
+
+.suggestion_address_left::-webkit-scrollbar-thumb {
+   background-color: #ccc; /* Color of the scrollbar thumb */
+   border-radius: 4px; /* Rounded corners */
+}
+
+.suggestion_address_left::-webkit-scrollbar-track {
+   background-color: #f9f9f9; /* Color of the scrollbar track */
+}
+ .suggestion_address_front {
+   position: absolute;
+   width: 88%;
+   max-width: 400px; /* Adjust the max width as needed */
+   margin: 0 auto; /* Center the div */
+   border: 1px solid #ccc; /* Border to make it look like a select box */
+   border-radius: 4px; /* Rounded corners */
+   background-color: #fff; /* Background color */
+   overflow-y: auto; /* Enable vertical scroll */
+   max-height: 200px; /* Limit the height */
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Slight shadow for depth */
+   z-index: 1;
+}
+
+.suggestion_address_front li {
+   list-style-type: none; /* Remove default list style */
+   padding: 10px 15px; /* Padding for each list item */
+   border-bottom: 1px solid #eee; /* Border between items */
+   cursor: pointer; /* Pointer cursor on hover */
+   background-color: #fff; /* Background color */
+   transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.suggestion_address_front li:last-child {
+   border-bottom: none; /* Remove border from the last item */
+}
+
+.suggestion_address_front li:hover {
+   background-color: #f0f0f0; /* Background color on hover */
+}
+
+@media (max-width: 600px) {
+   .suggestion_address_front {
+       max-width: 100%; /* Make the div full-width on small screens */
+   }
+}
+
+/* Optional: Styling for scrollbar (Webkit-based browsers) */
+.suggestion_address_front::-webkit-scrollbar {
+   width: 8px; /* Width of the scrollbar */
+}
+
+.suggestion_address_front::-webkit-scrollbar-thumb {
+   background-color: #ccc; /* Color of the scrollbar thumb */
+   border-radius: 4px; /* Rounded corners */
+}
+
+.suggestion_address_front::-webkit-scrollbar-track {
+   background-color: #f9f9f9; /* Color of the scrollbar track */
+}
+ .suggestion_address_back_side {
+   position: absolute;
+   width: 88%;
+   max-width: 400px; /* Adjust the max width as needed */
+   margin: 0 auto; /* Center the div */
+   border: 1px solid #ccc; /* Border to make it look like a select box */
+   border-radius: 4px; /* Rounded corners */
+   background-color: #fff; /* Background color */
+   overflow-y: auto; /* Enable vertical scroll */
+   max-height: 200px; /* Limit the height */
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Slight shadow for depth */
+   z-index: 1;
+}
+
+.suggestion_address_back_side li {
+   list-style-type: none; /* Remove default list style */
+   padding: 10px 15px; /* Padding for each list item */
+   border-bottom: 1px solid #eee; /* Border between items */
+   cursor: pointer; /* Pointer cursor on hover */
+   background-color: #fff; /* Background color */
+   transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.suggestion_address_back_side li:last-child {
+   border-bottom: none; /* Remove border from the last item */
+}
+
+.suggestion_address_back_side li:hover {
+   background-color: #f0f0f0; /* Background color on hover */
+}
+
+@media (max-width: 600px) {
+   .suggestion_address_back_side {
+       max-width: 100%; /* Make the div full-width on small screens */
+   }
+}
+
+/* Optional: Styling for scrollbar (Webkit-based browsers) */
+.suggestion_address_back_side::-webkit-scrollbar {
+   width: 8px; /* Width of the scrollbar */
+}
+
+.suggestion_address_back_side::-webkit-scrollbar-thumb {
+   background-color: #ccc; /* Color of the scrollbar thumb */
+   border-radius: 4px; /* Rounded corners */
+}
+
+.suggestion_address_back_side::-webkit-scrollbar-track {
+   background-color: #f9f9f9; /* Color of the scrollbar track */
+}
+.eye{
+   position: absolute;
+       right: 10px;
+       top: 7px;
+}
+.datawrapper-VMbOT-1ef6rgf .datawrapper-VMbOT-1ef6rgf{
+   display: none !important;
+}
+.tableauPlaceholder{
+   width: 100% !important;
+}

@@ -1,0 +1,104 @@
+@media only screen and (min-width:1300px) {
+    .dashboard .left{
+     
+        display:block !important
+    
+    }
+}
+@media only screen and (max-width:1300px) {
+    .dashboard .left{
+        position: fixed;
+        top: 0;
+        left: 0;
+       z-index: 999;
+        display:none ;
+        transition: 1s;
+        min-height: 931px !important;
+    }
+    .dashboard .left{
+        width: 300px;
+     }
+    .dashboard .right{
+       width: 100%;
+    }
+   .navbar .navbar-brand  img{
+    display: block !important;
+   }
+   #bars{
+    display: block !important;
+   }
+   #cross-icon{
+    display: block !important;
+   }
+}       
+
+@media only screen and (max-width:1200px) {
+    .text-content{
+        width: 100%;
+     }
+     .navbar ul{
+        gap: 7px !important;
+    }
+
+}
+@media only screen and (max-width:992px) {
+    .reports .subbox h3 {
+        font-size: 20px;
+    }
+    .table > thead tr th {
+       
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+}
+@media only screen and (max-width:850px) {
+    
+    .reports .subbox h3 {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width:800px) {
+    #otpForm input[type="text"] {
+        width: 62.38px;
+        height: 60.18px;
+    }
+    
+
+}
+@media only screen and (max-width:768px) {
+    
+    .reports .subbox h3 {
+        font-size: 18px;
+    }
+    
+
+}
+
+/* Media Queries below 567px */
+@media only screen and (max-width:567px) {
+    .font-big-700 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 33.41px;
+    }
+
+    #otpForm input[type="text"] {
+        max-width: 50.38px;
+        max-height: 50.18px;
+    }
+    
+
+}
+
+@media only screen and (max-width:421px) {
+
+
+    #otpForm input[type="text"] {
+        max-width: 35.38px;
+        max-height: 35.18px;
+    }
+
+}
